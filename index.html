@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Period Tracker</h1>
+        
+        <form id="tracker-form">
+            <div class="xbox">
+                <label for="cycle-length">Cycle Length (Days): </label>
+                <input type="number" id="cycle-length" required>
+            </div>
+            <div class="pc">
+                <label for="last-period-date">Last Period Start Date: </label>
+                <input type="date" id="last-period-date" required>
+            </div>
+            <button type="submit">Track Period</button>
+        </form>
+
+        <div id="period-info">
+            <h2>Your Next Period</h2>
+            <p id="next-period">Enter details to calculate your next period.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
